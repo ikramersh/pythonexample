@@ -3,4 +3,4 @@ def add(a,b):
 
 
 def test_answer():
-    assert add(1,2) == 5
+    assert add(1,2) == 3
