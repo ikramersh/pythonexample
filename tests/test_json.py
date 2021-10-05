@@ -5,6 +5,6 @@ def test_json():
     jsonObjs = jsonObjects(myJsonStr)
 
     assert(jsonObjs['names'][0] == "Ivan")
-    assert("Ariella" in jsonObjs['names'])
+    assert("Ariell" in jsonObjs['names'])
     assert("John" not in jsonObjs['names'])
     
