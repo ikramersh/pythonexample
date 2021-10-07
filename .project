@@ -20,5 +20,10 @@
 			<type>2</type>
 			<location>C:/Users/ikram/Documents/Ivan/Repositories/simplejson</location>
 		</link>
+		<link>
+			<name>yahoo_fin</name>
+			<type>2</type>
+			<location>C:/Users/ikram/Documents/Ivan/Repositories/yahoo_fin</location>
+		</link>
 	</linkedResources>
 </projectDescription>
