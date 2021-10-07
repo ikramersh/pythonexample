@@ -10,6 +10,7 @@ def jsonObjects(jsonStr):
     return json.loads(jsonStr)
     
     
+
 myJsonStr = jsonStr({"names" : ("Ivan", "Helen", "Lara", "Ariella")})
 jsonObjs = jsonObjects(myJsonStr)
 print(type(jsonObjs))
