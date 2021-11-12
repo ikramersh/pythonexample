@@ -1,4 +1,4 @@
-from yahoo_fin.stock_info import get_live_prices, get_live_price 
+from yahoo_fin.stock_info import get_live_prices, get_live_price
 from yahoo_fin.stock_info import tickers_nasdaq
 
 
