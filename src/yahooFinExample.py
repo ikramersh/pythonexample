@@ -1,4 +1,5 @@
-from yahoo_fin.stock_info import get_live_prices, get_live_price, tickers_nasdaq
+from yahoo_fin.stock_info import get_live_prices, get_live_price, 
+tickers_nasdaq
 
 
 stockList = ['CBA.AX', 'TLS.AX', 'amp.ax', 'ori.ax', 'bxb.ax']
