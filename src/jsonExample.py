@@ -1,4 +1,3 @@
-#import simplejson as json
 import json
 
 
@@ -13,5 +12,5 @@ def jsonObjects(jsonStr):
 
 myJsonStr = jsonStr({"names" : ("Ivan", "Helen", "Lara", "Ariella")})
 jsonObjs = jsonObjects(myJsonStr)
-print(type(jsonObjs))
+print(jsonObjs)
 print(jsonObjs['names']) 
