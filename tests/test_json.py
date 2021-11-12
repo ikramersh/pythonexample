@@ -7,4 +7,4 @@ def test_json():
 
     assert(jsonObjs['names'][0] == "Ivan")
     assert("Ariella" in jsonObjs['names'])
-    assert("John" not in jsonObjs['names'])  
+    assert("John" not in jsonObjs['names'])
