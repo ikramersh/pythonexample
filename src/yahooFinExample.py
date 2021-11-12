@@ -1,8 +1,13 @@
-#from yahoo_fin import stock_info as si
-from yahoo_fin.stock_info import get_data, get_live_price
+from yahoo_fin.stock_info import get_live_prices, get_live_price, tickers_nasdaq
 
-stockList = ['CBA.AX', 'TLS.AX']
-#stockList = si.tickers_sp500()
+
+stockList = ['CBA.AX', 'TLS.AX', 'amp.ax', 'ori.ax', 'bxb.ax']
+livePrices = get_live_prices(stockList)
+for livePrice in livePrices.items():
+    print(livePrice[0], livePrice[1])
+
 for ticker in stockList:
-    print(f'{ticker}: {get_live_price(ticker):.2f}')
-#si.get_dividends('cba.ax')
+    print(f'{ticker}: {get_live_price(ticker):.3f}')
+stockList = tickers_nasdaq()
+
+print("Done")
