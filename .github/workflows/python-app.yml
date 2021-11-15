@@ -28,8 +28,8 @@ jobs:
     - name: Setup flake8 annotations
       #uses: rbialon/flake8-annotations@v1
       uses: reviewdog/action-flake8@v3
-      # Lint with flake8
-    - name: autopep8
+    - name: Lint with flake8 
+      id: autopep8
       uses: peter-evans/autopep8@v1
       with:
         args: -d --exit-code --recursive .
@@ -37,8 +37,8 @@ jobs:
         # stop the build if there are Python syntax errors or undefined names
         #flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
     - name: Fail if autopep8 made changes
-        if: 'steps.autopep8.outputs.exit-code == 2'
-        run: exit 1    
+      if: steps.autopep8.outputs.exit-code == 2
+      run: exit 1    
     - name: Test with pytest
       run: |
         python -m pytest tests
