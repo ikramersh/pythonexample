@@ -33,8 +33,6 @@ jobs:
       uses: peter-evans/autopep8@v1
       with:
         args: -d --exit-code --recursive .
-      if: exit-code == 2
-      run: exit 1    
       #run: |
         # stop the build if there are Python syntax errors or undefined names
         #flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
