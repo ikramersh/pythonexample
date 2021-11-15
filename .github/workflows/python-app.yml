@@ -33,13 +33,12 @@ jobs:
       uses: peter-evans/autopep8@v1
       with:
         args: -d --recursive .
-      run: echo exit-code
       #run: |
         # stop the build if there are Python syntax errors or undefined names
         #flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
-    #- name: Fail on exit autopep8
-      # if: steps.autopep8.outputs.exit-code == 2
-      # run: exit 1    
+    - name: Fail on exit autopep8
+      if: steps.autopep8.outputs.exit-code == 2
+      run: exit 1    
     - name: Test with pytest
       run: |
         python -m pytest tests
